@@ -3,24 +3,23 @@
     justify-content: center;
     align-items: center;
     background-color: var(--background);
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .projectPage {
     width: 40vw;
-    height: 60vh;
+   
     border: 1px solid var(--border-color2);
-    margin-bottom: 10%;
     padding: 2%;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .projectInfo {
-    width: 20vw;
-    height: 40vh;
+   
     border-top: .25px solid var(--border-color2);
     border-right: .25px solid var(--border-color2);
     border-bottom: .25px solid var(--border-color2);
-    margin-top: -5%;
     text-align: center;
     padding: 2%;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
@@ -40,8 +39,12 @@
 
 .projectTitle {
     padding-top: 11vh;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
     text-align: center;
     letter-spacing: 3px;
     font-family: 'Lato', sans-serif;
+}
+
+.slide-container {
+
 }
