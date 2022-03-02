@@ -1,20 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.d314a766.css",
-    "main.js": "/static/js/main.6297f37c.js",
+    "main.css": "/static/css/main.b8c783c4.css",
+    "main.js": "/static/js/main.77d15d39.js",
     "static/js/787.ebaef199.chunk.js": "/static/js/787.ebaef199.chunk.js",
+    "static/media/Tsundoku-List-Dark.png": "/static/media/Tsundoku-List-Dark.7d404c5d3fad24490534.png",
+    "static/media/Tsundoku-List-Light.png": "/static/media/Tsundoku-List-Light.bad419d8e440a177d24b.png",
+    "static/media/Tsundoku-Profile-Light.png": "/static/media/Tsundoku-Profile-Light.75a892208eadd3275123.png",
+    "static/media/Tsundoku-Profile-Dark.png": "/static/media/Tsundoku-Profile-Dark.f918374753288898d15d.png",
+    "static/media/Tsundoku-Home-Light.png": "/static/media/Tsundoku-Home-Light.efc4e3134c334a837496.png",
+    "static/media/Tsundoku-Home-Dark.png": "/static/media/Tsundoku-Home-Dark.c355bf83296f467afb3d.png",
+    "static/media/Tsundoku-Page-Light.png": "/static/media/Tsundoku-Page-Light.44c9e422ba376e807dc9.png",
+    "static/media/Tsundoku-Page-Dark.png": "/static/media/Tsundoku-Page-Dark.0928de95beefcbd08fb0.png",
     "static/media/python-logo.png": "/static/media/python-logo.645a7bf502774a003373.png",
     "static/media/html-logo.png": "/static/media/html-logo.9d7c24521fb9a01b84a4.png",
     "static/media/css-logo.png": "/static/media/css-logo.6402b604475346c0ff73.png",
     "static/media/js-logo.png": "/static/media/js-logo.f9b5a3bc9bb5205e88b3.png",
     "static/media/sql-logo.png": "/static/media/sql-logo.4676ad983d6bd3e9fac9.png",
     "index.html": "/index.html",
-    "main.d314a766.css.map": "/static/css/main.d314a766.css.map",
-    "main.6297f37c.js.map": "/static/js/main.6297f37c.js.map",
+    "main.b8c783c4.css.map": "/static/css/main.b8c783c4.css.map",
+    "main.77d15d39.js.map": "/static/js/main.77d15d39.js.map",
     "787.ebaef199.chunk.js.map": "/static/js/787.ebaef199.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d314a766.css",
-    "static/js/main.6297f37c.js"
+    "static/css/main.b8c783c4.css",
+    "static/js/main.77d15d39.js"
   ]
 }
