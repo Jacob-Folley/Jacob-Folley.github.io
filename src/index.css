@@ -1,5 +1,11 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
+  background-color: var(--background);
+  color: var(--font-color);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +16,28 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@import './Styles/homeModule.css'; 
+@import './Styles/navBar.css'; 
+@import './Styles/projectModule.css'; 
+@import './Styles/skillsModule.css'; 
+@import './Styles/contactModule.css'; 
+
+
+
+:root {
+  --background: rgb(32, 32, 32);
+  --font-color: rgb(240, 240, 240);
+  --border-color: rgb(15, 15, 15);
+  --border-color2: black;
+  --darkLight: rgb(250, 245, 245);
+}
+
+.lightmode {
+  --background: rgb(250, 245, 245);
+  --font-color: rgb(17, 17, 17);
+  --border-color: rgb(255, 247, 247);
+  --border-color2: white;
+  --darkLight: rgb(32, 32, 32);
 }

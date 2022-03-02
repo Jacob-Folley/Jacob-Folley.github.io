@@ -1,0 +1,65 @@
+.contactContainer {
+    height: 100vh;
+}
+.contact {
+    display: flex; 
+    width: 100vw;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.nameEmail {
+    display: flex;
+    width:40vw;
+    margin-bottom: 1%;
+}
+
+.nameEmail input {
+    width:20vw;
+    height: 5vh;
+    margin-right: 1%;
+    border: .5px solid rgb(196, 196, 196); 
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.subject {
+    width: 40vw;
+}
+
+.subject input {
+    width: 39vw;
+    height: 5vh;
+    margin-bottom: 1%;
+    border: .5px solid rgb(196, 196, 196); 
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+textarea {
+    width: 39vw;
+    height: 20vh;
+    border: .5px solid rgb(196, 196, 196); 
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.submitButton {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.submitButton button {
+    margin-top: 1%;
+    height: 4vh;
+    width: 10vw;
+    background-color: white;
+    border: .5px solid rgb(196, 196, 196); 
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    margin-left: 35%;
+}
+
+.contactTitle {
+    padding-top: 20vh;
+    margin-bottom: 5%;
+    text-align: center;
+    letter-spacing: 3px;
+    font-family: 'Lato', sans-serif;
+}
