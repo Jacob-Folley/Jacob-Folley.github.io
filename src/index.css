@@ -22,7 +22,7 @@ code {
 @import './Styles/navBar.css'; 
 @import './Styles/projectModule.css'; 
 @import './Styles/skillsModule.css'; 
-@import './Styles/contactModule.css'; 
+@import './Styles/contactModule.scss'; 
 
 
 

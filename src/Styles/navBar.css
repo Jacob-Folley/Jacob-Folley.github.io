@@ -67,6 +67,11 @@
     width: auto;
 }
 
+.icon-resume{
+    height: 35px;
+    width: auto;
+}
+
 .lightDark {
     border: .5px solid black;
     background-color: var(--darkLight);
