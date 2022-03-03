@@ -54,6 +54,25 @@
     justify-content: space-evenly;
 }
 
+.top {
+    animation: backInDown; 
+    animation-duration: 2s;
+}
+
+.left {
+    animation: backInLeft; 
+    animation-duration: 2s;
+}
+
+.right {
+    animation: backInRight; 
+    animation-duration: 2s;
+}
+
+.bottom {
+    animation: backInUp; 
+    animation-duration: 2s;
+}
 
 
 

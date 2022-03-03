@@ -5,6 +5,7 @@ export const SkillModule = () => {
 
     return (
         <>
+        <NavBar />
             <div className="skillContainer">
             <h1 className="skillTitle">Skills</h1>
             

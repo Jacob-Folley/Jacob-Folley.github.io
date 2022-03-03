@@ -14,7 +14,8 @@
 
 .skillObj {
     height: 10em;
-    
+    animation: zoomIn; 
+    animation-duration: 2s;
 }
 
 .skillObj img {

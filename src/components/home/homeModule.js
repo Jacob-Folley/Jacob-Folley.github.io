@@ -11,16 +11,16 @@ export const HomeModule = () => {
             <NavBar />
             <div className="homeContainer" id="homeAnchor">
                 <div className="introduction">
-                    <div><p>Hello, my name is</p></div>
-                    <div><h1>JACOB FOLLEY</h1></div>
-                    <div><h2>SOFTWARE ENGINEER</h2></div>
-                    <div><p id="bio">Based in Nashville</p></div>
+                    <div className="top"><p>Hello, my name is</p></div>
+                    <div className="left"><h1>JACOB FOLLEY</h1></div>
+                    <div className="right"><h2>SOFTWARE ENGINEER</h2></div>
+                    <div className="bottom"><p id="bio">Based in Nashville</p></div>
                 </div>
             </div>
         
-            <div id="projectAnchor"><ProjectModule /></div>
+            {/* <div id="projectAnchor"><ProjectModule /></div>
             <div id="skillsAnchor"><SkillModule /></div>
-            <div id="contactAnchor"><ContactModule /></div>
+            <div id="contactAnchor"><ContactModule /></div> */}
         </>
     )
 }
