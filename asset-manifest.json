@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.b8c783c4.css",
-    "main.js": "/static/js/main.77d15d39.js",
+    "main.css": "/static/css/main.3c46de72.css",
+    "main.js": "/static/js/main.541e1d3f.js",
     "static/js/787.ebaef199.chunk.js": "/static/js/787.ebaef199.chunk.js",
     "static/media/Tsundoku-List-Dark.png": "/static/media/Tsundoku-List-Dark.7d404c5d3fad24490534.png",
     "static/media/Tsundoku-List-Light.png": "/static/media/Tsundoku-List-Light.bad419d8e440a177d24b.png",
@@ -17,12 +17,12 @@
     "static/media/js-logo.png": "/static/media/js-logo.f9b5a3bc9bb5205e88b3.png",
     "static/media/sql-logo.png": "/static/media/sql-logo.4676ad983d6bd3e9fac9.png",
     "index.html": "/index.html",
-    "main.b8c783c4.css.map": "/static/css/main.b8c783c4.css.map",
-    "main.77d15d39.js.map": "/static/js/main.77d15d39.js.map",
+    "main.3c46de72.css.map": "/static/css/main.3c46de72.css.map",
+    "main.541e1d3f.js.map": "/static/js/main.541e1d3f.js.map",
     "787.ebaef199.chunk.js.map": "/static/js/787.ebaef199.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b8c783c4.css",
-    "static/js/main.77d15d39.js"
+    "static/css/main.3c46de72.css",
+    "static/js/main.541e1d3f.js"
   ]
 }
