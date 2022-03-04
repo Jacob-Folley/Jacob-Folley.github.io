@@ -50,7 +50,7 @@ export const ProjectModule = () => {
 
     return (
         <>
-        <NavBar />
+            <NavBar />
             <div><h1 className="projectTitle">Projects</h1></div>
             <section className="project">
                 <div className="projectPage">

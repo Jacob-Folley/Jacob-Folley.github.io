@@ -17,7 +17,7 @@ export const HomeModule = () => {
                     <div className="bottom"><p id="bio">Based in Nashville</p></div>
                 </div>
             </div>
-        
+
             {/* <div id="projectAnchor"><ProjectModule /></div>
             <div id="skillsAnchor"><SkillModule /></div>
             <div id="contactAnchor"><ContactModule /></div> */}

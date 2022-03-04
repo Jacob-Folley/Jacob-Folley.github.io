@@ -24,11 +24,12 @@ export const ContactModule = () => {
             .then((response) => {
                 console.log('SUCCESS!', response.status, response.text);
             })
-            .then(setToSend({        
+            .then(setToSend({
                 from_name: '',
                 reply_to: '',
                 subject: '',
-                message: ''}))
+                message: ''
+            }))
             .then(history.push('/contact'))
             .catch((err) => {
                 console.log('FAILED...', err);
