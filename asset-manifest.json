@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.3c46de72.css",
-    "main.js": "/static/js/main.541e1d3f.js",
+    "main.js": "/static/js/main.138bc63e.js",
     "static/js/787.ebaef199.chunk.js": "/static/js/787.ebaef199.chunk.js",
     "static/media/Tsundoku-List-Dark.png": "/static/media/Tsundoku-List-Dark.7d404c5d3fad24490534.png",
     "static/media/Tsundoku-List-Light.png": "/static/media/Tsundoku-List-Light.bad419d8e440a177d24b.png",
@@ -18,11 +18,11 @@
     "static/media/sql-logo.png": "/static/media/sql-logo.4676ad983d6bd3e9fac9.png",
     "index.html": "/index.html",
     "main.3c46de72.css.map": "/static/css/main.3c46de72.css.map",
-    "main.541e1d3f.js.map": "/static/js/main.541e1d3f.js.map",
+    "main.138bc63e.js.map": "/static/js/main.138bc63e.js.map",
     "787.ebaef199.chunk.js.map": "/static/js/787.ebaef199.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3c46de72.css",
-    "static/js/main.541e1d3f.js"
+    "static/js/main.138bc63e.js"
   ]
 }
