@@ -23,8 +23,13 @@ export const ContactModule = () => {
         )
             .then((response) => {
                 console.log('SUCCESS!', response.status, response.text);
-                history.go(0)
             })
+            .then(setToSend({        
+                from_name: '',
+                reply_to: '',
+                subject: '',
+                message: ''}))
+            .then(history.push('/contact'))
             .catch((err) => {
                 console.log('FAILED...', err);
             })
