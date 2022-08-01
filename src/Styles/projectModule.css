@@ -1,56 +1,88 @@
 .project {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--background);
-    margin-left: 5%;
-    margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background);
+  /* margin-left: 5%;
+  margin-right: 5%; */
+  padding-top: 2%;
+  padding-bottom: 2%;
+  width: 100%;
+  /* border: solid 0.2px cyan; */
 }
 
 .projectPage {
-    width: 40vw;
-   
-    border: 1px solid var(--border-color2);
-    padding: 2%;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  width: 820px;
+  height: 400px;
+  border: 1px solid var(--border-color2);
+  padding: 2%;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .projectInfo {
-   
-    border-top: .25px solid var(--border-color2);
-    border-right: .25px solid var(--border-color2);
-    border-bottom: .25px solid var(--border-color2);
-    text-align: center;
-    padding: 2%;
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-}
-
-.projectInfo1 {
-    width: 20vw;
-    height: 40vh;
-    border-top: .25px solid var(--border-color2);
-    border-left: .25px solid var(--border-color2);
-    border-bottom: .25px solid var(--border-color2);
-    margin-top: -5%;
-    text-align: center;
-    padding: 2%;
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  padding: 0 2% 0 2%;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  width: 820px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1%;
 }
 
 .projectTitle {
-    padding-top: 11vh;
-    margin-bottom: 5%;
-    text-align: center;
-    letter-spacing: 3px;
-    font-family: 'Lato', sans-serif;
+  padding-top: 11vh;
+  margin-bottom: 2%;
+  text-align: center;
+  letter-spacing: 3px;
+  font-family: "Lato", sans-serif;
 }
 
 .projectPage {
-    animation: zoomIn; 
-    animation-duration: 2s;
+  animation: zoomIn;
+  animation-duration: 2s;
 }
 
 .projectInfo {
-    animation: zoomIn; 
-    animation-duration: 2s;
+  animation: zoomIn;
+  animation-duration: 2s;
+}
+
+.slide-container {
+  height: 100%;
+}
+
+.each-slide {
+  margin-left: 4%;
+}
+
+.each-slide > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 400px;
+}
+
+.projectName {
+  font-size: 2rem;
+}
+
+.projectDescription {
+  padding: 0 15% 0 15%;
+  font-size: 1.2rem;
+}
+
+.projectMotivation {
+  padding: 0 15% 0 15%;
+  font-size: 1.2rem;
+}
+
+.projectSkills {
+}
+
+.projectSourceCode > a {
+  color: cyan;
+  text-decoration: none;
 }
