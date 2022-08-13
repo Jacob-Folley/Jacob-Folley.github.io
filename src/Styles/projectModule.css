@@ -4,6 +4,8 @@
   justify-content: center;
   align-items: center;
   background-color: var(--background);
+  font-family: "Inter", sans-serif;
+  color: var(--font-color);
   /* margin-left: 5%;
   margin-right: 5%; */
   padding-top: 2%;
@@ -15,20 +17,26 @@
 .projectPage {
   width: 820px;
   height: 400px;
-  border: 1px solid var(--border-color2);
+  border-left: 1px solid var(--border-color2);
+  border-right: 1px solid var(--border-color2);
   padding: 2%;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  border-bottom-left-radius: 2%;
+  border-bottom-right-radius: 2%;
 }
 
 .projectInfo {
   padding: 0 2% 0 2%;
-  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
   width: 820px;
   height: auto;
   display: flex;
   flex-direction: column;
-  margin-bottom: 1%;
+  padding-bottom: 1%;
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
 }
 
 .projectTitle {
@@ -36,7 +44,7 @@
   margin-bottom: 2%;
   text-align: center;
   letter-spacing: 3px;
-  font-family: "Lato", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .projectPage {
@@ -66,7 +74,8 @@
 }
 
 .projectName {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  margin-bottom: 5px;
 }
 
 .projectDescription {
@@ -80,9 +89,11 @@
 }
 
 .projectSkills {
+  font-size: 1.2rem;
 }
 
 .projectSourceCode > a {
-  color: cyan;
+  color: rgb(24, 65, 112);
   text-decoration: none;
+  font-size: 1.2rem;
 }
