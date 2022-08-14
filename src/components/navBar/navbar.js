@@ -3,25 +3,23 @@ import { useHistory, Link } from "react-router-dom";
 
 export const NavBar = () => {
   const history = useHistory();
-
   const [state, setState] = useState("");
-
+  const [icon, setIcon] = useState("sun");
   const [change, setChange] = useState("");
 
   const lightModeCheck = () => {
     let lightMode = localStorage.getItem("lightMode");
+    console.log(lightMode);
     return lightMode;
   };
 
   useEffect(() => {
-    setState(lightModeCheck());
+    lightDark();
   }, []);
 
   useEffect(() => {
-    if (change == "enabled") {
-    } else {
-    }
-  }, []);
+    iconCheck();
+  }, [state]);
 
   // lightModeCheck()
 
@@ -29,41 +27,92 @@ export const NavBar = () => {
   // if enabled, turn it off
   // if enabled turn it onClick
 
+  //   const lightDarkIcon = () => {
+  //     if (lightModeCheck() == null) {
+  //       setIcon(image1);
+  //     } else {
+  //       setIcon(image2);
+  //     }
+  //   };
+
   const enableLightMode = () => {
     document.body.classList.add("lightmode");
     localStorage.setItem("lightMode", "enabled");
+    lightDark();
   };
 
   const disableLightMode = () => {
     document.body.classList.remove("lightmode");
     localStorage.setItem("lightMode", null);
+    lightDark();
   };
 
-  if (lightModeCheck() === "enabled") {
-    enableLightMode();
-  }
+  //   if (lightModeCheck() === "enabled") {
+  //     enableLightMode();
+  //   }
 
-  const light = () => {
-    lightModeCheck();
-    console.log(lightModeCheck());
-    if (lightModeCheck() !== "enabled") {
-      enableLightMode();
+  //   const light = () => {
+  //     lightModeCheck();
+  //     console.log(lightModeCheck());
+  //     if (lightModeCheck() !== "enabled") {
+  //       enableLightMode();
+  //     }
+  //   };
+
+  //   const dark = () => {
+  //     lightModeCheck();
+  //     console.log(lightModeCheck());
+  //     if (lightModeCheck() == "enabled") {
+  //       disableLightMode();
+  //     }
+  //   };
+
+  const iconCheck = () => {
+    if (state === "enabled") {
+      setIcon("moonn");
+    } else {
+      setIcon("sun");
     }
   };
 
-  const dark = () => {
-    lightModeCheck();
-    console.log(lightModeCheck());
-    if (lightModeCheck() == "enabled") {
-      disableLightMode();
-    }
+  const lightDark = () => {
+    setState(localStorage.getItem("lightMode"));
   };
 
   return (
     <>
       <section className="navBar">
         <div className="navBarContainer">
-          <button
+          {lightModeCheck() == null ? (
+            <img
+              className="lightDark"
+              src={require(`/${icon}.png`)}
+              onClick={() => {
+                lightDark();
+                console.log(lightModeCheck());
+                if (lightModeCheck() !== "enabled") {
+                  enableLightMode();
+                } else {
+                  disableLightMode();
+                }
+              }}
+            ></img>
+          ) : (
+            <img
+              className="lightDark"
+              src={require(`/${icon}.png`)}
+              onClick={() => {
+                lightDark();
+                console.log(lightModeCheck());
+                if (lightModeCheck() !== "enabled") {
+                  enableLightMode();
+                } else {
+                  disableLightMode();
+                }
+              }}
+            ></img>
+          )}
+          {/* <button
             className="lightDark"
             onClick={() => {
               lightModeCheck();
@@ -74,7 +123,7 @@ export const NavBar = () => {
                 disableLightMode();
               }
             }}
-          ></button>
+          ></button> */}
           <div className="iconHome">
             <Link to="/">Jacob Folley</Link>
           </div>
@@ -83,7 +132,9 @@ export const NavBar = () => {
             <div className="icon">
               <Link to="/">work</Link>
             </div>
-            <div className="icon">about me</div>
+            <div className="icon">
+              <Link to="/projects">about me</Link>
+            </div>
           </div>
         </div>
       </section>

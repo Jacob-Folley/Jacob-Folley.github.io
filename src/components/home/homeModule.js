@@ -91,7 +91,9 @@ export const HomeModule = () => {
             </h1>
             <p>
               If you wish to contact me, please email me at{" "}
-              <b>jakebfolley@gmail.com</b>
+              <a href="https://mail.google.com/mail/u/0/?fs=1&to=jakebfolley@gmail.com&su=SUBJECT&body=BODY&tf=cm">
+                <b>jakebfolley@gmail.com</b>
+              </a>
             </p>
           </div>
         </div>
@@ -128,6 +130,30 @@ export const HomeModule = () => {
                 </div>
               ))}
             </Slide>
+          </div>
+        </div>
+      </section>
+      <section className="project">
+        <div className="projectInfo">
+          <h1 className="projectName">Notes</h1>
+          <h3 className="projectSourceCode">
+            <b>Source Code: </b>
+            <a href="https://github.com/Jacob-Folley/NoteTaking">GitHub</a>
+          </h3>
+
+          <div className="projectSkills">
+            <b>Technologies: </b>
+            React, JavaScript, HTML, CSS, Python, Django
+          </div>
+        </div>
+        <div className="projectPage">
+          <div className="slide-container">
+            <div>
+              <img
+                className="projectImg"
+                src={require("../../img/noteApp.png")}
+              ></img>
+            </div>
           </div>
         </div>
       </section>
@@ -172,7 +198,7 @@ export const HomeModule = () => {
       <div className="links">
         <div className="social">
           <a
-            href="https://docs.google.com/document/d/1vc-FrHDgSpF-oc-CAvBkGaflAUbF9qD30o6CKUx1UKs/edit?usp=sharing"
+            href="https://docs.google.com/document/d/1rPBiTPN9MdwAOJv-mgjpWn5WeqcKNkoVAWEgnppk1uc/edit?usp=sharing"
             target="_blank"
           >
             <img

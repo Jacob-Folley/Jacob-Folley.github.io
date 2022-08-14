@@ -19,6 +19,8 @@
   height: 400px;
   border-left: 1px solid var(--border-color2);
   border-right: 1px solid var(--border-color2);
+  border-bottom: 1px solid var(--border-color2);
+
   padding: 2%;
   box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
     rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
@@ -37,6 +39,9 @@
   padding-bottom: 1%;
   border-top-left-radius: 2%;
   border-top-right-radius: 2%;
+  border-left: 1px solid var(--border-color2);
+  border-right: 1px solid var(--border-color2);
+  border-top: 1px solid var(--border-color2);
 }
 
 .projectTitle {
@@ -96,4 +101,9 @@
   color: rgb(24, 65, 112);
   text-decoration: none;
   font-size: 1.2rem;
+}
+
+.projectImg {
+  width: 90%;
+  margin-left: 5%;
 }
