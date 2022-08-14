@@ -6,38 +6,43 @@ body {
   margin: 0;
   background-color: var(--background);
   color: var(--font-color);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif; */
+  font-family: "Inter", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  /* font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace; */
+  font-family: "Inter", sans-serif;
 }
 
-@import './Styles/homeModule.css'; 
-@import './Styles/navBar.css'; 
-@import './Styles/projectModule.css'; 
-@import './Styles/skillsModule.css'; 
-@import './Styles/contactModule.scss'; 
-
-
+@import "./Styles/homeModule.css";
+@import "./Styles/navBar.css";
+@import "./Styles/projectModule.css";
+@import "./Styles/skillsModule.css";
+@import "./Styles/contactModule.scss";
+@import "./Styles/aboutMe.css";
 
 :root {
   --background: rgb(32, 32, 32);
-  --font-color: rgb(240, 240, 240);
+  --font-color: rgb(238, 231, 231);
   --border-color: rgb(15, 15, 15);
   --border-color2: black;
   --darkLight: rgb(250, 245, 245);
+  --cardColor: rgb(28, 28, 28);
+  --bioColor: #a5c9ca;
 }
 
 .lightmode {
-  --background: rgb(250, 245, 245);
+  --background: #fffdf9;
   --font-color: rgb(17, 17, 17);
   --border-color: rgb(255, 247, 247);
   --border-color2: white;
   --darkLight: rgb(32, 32, 32);
+  --cardColor: rgb(255, 255, 255);
+  --bioColor: rgb(24, 65, 112);
 }
