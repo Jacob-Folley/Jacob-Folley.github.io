@@ -3,9 +3,8 @@ import { useHistory, Link } from "react-router-dom";
 
 export const NavBar = () => {
   const history = useHistory();
-  const [state, setState] = useState("");
-  const [icon, setIcon] = useState("sun");
-  const [change, setChange] = useState("");
+  const [state, setState] = useState("null");
+  const [icon, setIcon] = useState("moonn");
 
   const lightModeCheck = () => {
     let lightMode = localStorage.getItem("lightMode");
@@ -21,51 +20,17 @@ export const NavBar = () => {
     iconCheck();
   }, [state]);
 
-  // lightModeCheck()
-
-  // check if dark mode is enabled
-  // if enabled, turn it off
-  // if enabled turn it onClick
-
-  //   const lightDarkIcon = () => {
-  //     if (lightModeCheck() == null) {
-  //       setIcon(image1);
-  //     } else {
-  //       setIcon(image2);
-  //     }
-  //   };
+  const disableLightMode = () => {
+    document.body.classList.remove("lightmode");
+    localStorage.setItem("lightMode", "null");
+    lightDark();
+  };
 
   const enableLightMode = () => {
     document.body.classList.add("lightmode");
     localStorage.setItem("lightMode", "enabled");
     lightDark();
   };
-
-  const disableLightMode = () => {
-    document.body.classList.remove("lightmode");
-    localStorage.setItem("lightMode", null);
-    lightDark();
-  };
-
-  //   if (lightModeCheck() === "enabled") {
-  //     enableLightMode();
-  //   }
-
-  //   const light = () => {
-  //     lightModeCheck();
-  //     console.log(lightModeCheck());
-  //     if (lightModeCheck() !== "enabled") {
-  //       enableLightMode();
-  //     }
-  //   };
-
-  //   const dark = () => {
-  //     lightModeCheck();
-  //     console.log(lightModeCheck());
-  //     if (lightModeCheck() == "enabled") {
-  //       disableLightMode();
-  //     }
-  //   };
 
   const iconCheck = () => {
     if (state === "enabled") {
