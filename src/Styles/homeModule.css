@@ -20,12 +20,6 @@
   width: 50%;
   animation: backInDown;
   animation-duration: 2s;
-  /* border-radius: 3%;
-  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
-    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
-    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
-  animation: backInDown;
-  animation-duration: 2s; */
 }
 
 .intro {
@@ -40,7 +34,7 @@
 }
 
 .introContainer h1 {
-  font-size: 2em;
+  font-size: 28px;
   margin: 1% 0 0 0;
 }
 
@@ -92,4 +86,122 @@ a {
   text-decoration: none;
   cursor: pointer;
   color: #064420;
+}
+
+@media only screen and (max-width: 1000px) {
+  .introContainer {
+    margin-top: 15%;
+  }
+  .introContainer p {
+    font-size: 0.5em;
+    /* margin-top: 5%;
+        font-family: "Inter", sans-serif; */
+    letter-spacing: 2px;
+  }
+
+  .introContainer h1 {
+    font-size: 16px;
+    margin: 1% 0 0 0;
+  }
+
+  .introContainer h2 {
+    font-size: 2em;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .homeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .introContainer {
+    display: flex;
+    flex-direction: column;
+    font-family: "Inter", sans-serif;
+    margin-top: 20%;
+    width: 200%;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    letter-spacing: 3px;
+    background-color: var(--background);
+    color: var(--font-color);
+    font-size: 1.5rem;
+    width: 80%;
+    animation: backInDown;
+    animation-duration: 2s;
+  }
+
+  .intro {
+    color: var(--bioColor);
+  }
+
+  .introContainer p {
+    font-size: 12px;
+    margin-top: 5%;
+    font-family: "Inter", sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  .introContainer h1 {
+    font-size: 14px;
+    margin: 1% 0 0 0;
+    text-align: center;
+  }
+
+  .introContainer h2 {
+    font-size: 2em;
+    margin: 0;
+  }
+
+  #bio {
+    margin-top: 5%;
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .links {
+    align-items: end;
+  }
+
+  .top {
+    margin-bottom: 5%;
+  }
+
+  .left {
+    margin-bottom: 5%;
+  }
+
+  .right {
+    margin-bottom: 5%;
+  }
+
+  .links {
+    width: 100%;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1%;
+  }
+
+  .icon-github {
+    width: 40px;
+  }
+
+  a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #064420;
+  }
+
+  @media only screen and (max-width: 400px) {
+    .links {
+      margin-top: 20%;
+      align-items: end;
+    }
+  }
 }
