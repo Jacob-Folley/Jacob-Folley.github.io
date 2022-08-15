@@ -28,13 +28,13 @@ code {
 @import "./Styles/aboutMe.css";
 
 :root {
-  --background: rgb(32, 32, 32);
+  --background: #121417;
   --font-color: rgb(238, 231, 231);
   --border-color: rgb(15, 15, 15);
   --border-color2: black;
   --darkLight: rgb(250, 245, 245);
   --cardColor: rgb(28, 28, 28);
-  --bioColor: #a5c9ca;
+  --bioColor: #64ffda;
 }
 
 .lightmode {
