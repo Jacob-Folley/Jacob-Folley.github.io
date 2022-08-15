@@ -574,3 +574,101 @@ margin-right: 5%; */
     margin-top: 10%;
   }
 }
+
+@media only screen and (max-width: 400px) {
+  .project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background);
+    font-family: "Inter", sans-serif;
+    color: var(--font-color);
+    /* margin-left: 5%;
+    margin-right: 5%; */
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 100%;
+    /* border: solid 0.2px cyan; */
+  }
+
+  .projectPage {
+    width: 80%;
+    height: 35vh;
+    border-left: 1px solid var(--border-color2);
+    border-right: 1px solid var(--border-color2);
+    border-bottom: 1px solid var(--border-color2);
+    padding: 2%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+      rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+  }
+
+  .projectInfo {
+    padding: 0 2% 0 2%;
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1%;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+    border-left: 1px solid var(--border-color2);
+    border-right: 1px solid var(--border-color2);
+    border-top: 1px solid var(--border-color2);
+  }
+
+  .projectPage {
+    animation: zoomIn;
+    animation-duration: 2s;
+  }
+
+  .projectInfo {
+    animation: zoomIn;
+    animation-duration: 2s;
+  }
+
+  .slide-container {
+    height: 100%;
+  }
+
+  .each-slide {
+    margin-left: 4%;
+  }
+
+  .each-slide > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    height: 400px;
+  }
+
+  .projectName {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+
+  .projectSkills {
+    font-size: 1rem;
+  }
+
+  .projectSourceCode > a {
+    color: rgb(24, 65, 112);
+    text-decoration: none;
+    font-size: 1rem;
+  }
+
+  .projectImg {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .react-slideshow-container {
+    margin-top: 10%;
+  }
+  .projectImg {
+    margin-top: 10%;
+  }
+}
