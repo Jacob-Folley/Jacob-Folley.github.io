@@ -28,21 +28,29 @@ code {
 @import "./Styles/aboutMe.css";
 
 :root {
-  --background: #121417;
-  --font-color: rgb(238, 231, 231);
-  --border-color: rgb(15, 15, 15);
-  --border-color2: black;
-  --darkLight: rgb(250, 245, 245);
-  --cardColor: rgb(28, 28, 28);
-  --bioColor: #64ffda;
-}
-
-.lightmode {
-  --background: #fffdf9;
+  --background: #ffffff;
   --font-color: rgb(17, 17, 17);
   --border-color: rgb(255, 247, 247);
   --border-color2: rgb(226, 221, 221);
   --darkLight: rgb(32, 32, 32);
-  --cardColor: rgb(255, 255, 255);
+  --cardColor: #fffdf9;
   --bioColor: rgb(24, 65, 112);
+  --linkColor: #064420;
+  --cardColor1: #e6edff;
+  --cardColor2: #e6dbeb;
+  --cardColor3: #dff0e1;
+}
+
+.lightmode {
+  --background: #121417;
+  --font-color: #64ffda;
+  --border-color: rgb(15, 15, 15);
+  --border-color2: black;
+  --darkLight: rgb(250, 245, 245);
+  --cardColor: #101215;
+  --bioColor: #64ffda;
+  --linkColor: rgb(98, 91, 246);
+  --cardColor1: #94b3fd;
+  --cardColor2: #b983ff;
+  --cardColor3: #baffb4;
 }

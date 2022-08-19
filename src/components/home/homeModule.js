@@ -3,8 +3,20 @@ import { NavBar } from "../navBar/navbar";
 import { ProjectModule } from "../projects/projectModule";
 import { SkillModule } from "../skills/skillModule";
 import { ContactModule } from "../contact/contact";
-import "react-slideshow-image/dist/styles.css";
-import { Slide } from "react-slideshow-image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  Autoplay,
+  EffectCube,
+} from "swiper";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+import "swiper/css/autoplay";
 import image from "../../img/Tsundoku-Home-Dark.png";
 import image1 from "../../img/Tsundoku-Home-Light.png";
 import image2 from "../../img/Tsundoku-List-Dark.png";
@@ -21,63 +33,6 @@ import pic3 from "../../img/CareerConnectPostins.png";
 import pic4 from "../../img/CareerConnectApplicants.png";
 
 export const HomeModule = () => {
-  const slideImages = [
-    {
-      url: `${image}`,
-      caption: "Slide 1",
-    },
-    {
-      url: `${image1}`,
-      caption: "Slide 2",
-    },
-    {
-      url: `${image2}`,
-      caption: "Slide 3",
-    },
-    {
-      url: `${image3}`,
-      caption: "Slide 4",
-    },
-    {
-      url: `${image4}`,
-      caption: "Slide 5",
-    },
-    {
-      url: `${image5}`,
-      caption: "Slide 6",
-    },
-    {
-      url: `${image6}`,
-      caption: "Slide 7",
-    },
-    {
-      url: `${image7}`,
-      caption: "Slide 8",
-    },
-  ];
-
-  const slideImages2 = [
-    {
-      url: `${pic}`,
-      caption: "Slide 1",
-    },
-    {
-      url: `${pic1}`,
-      caption: "Slide 2",
-    },
-    {
-      url: `${pic2}`,
-      caption: "Slide 3",
-    },
-    {
-      url: `${pic3}`,
-      caption: "Slide 4",
-    },
-    {
-      url: `${pic4}`,
-      caption: "Slide 5",
-    },
-  ];
   return (
     <>
       <NavBar />
@@ -99,102 +54,176 @@ export const HomeModule = () => {
         </div>
       </div>
 
-      <section className="project">
-        <div className="projectInfo">
-          <h1 className="projectName">Tsundoku</h1>
-          <h3 className="projectSourceCode">
-            <b>Source Code: </b>
-            <a href="https://github.com/Jacob-Folley/CapStone-Client">GitHub</a>
-          </h3>
+      <section className="projects">
+        <div className="projectContainer" id="project2">
+          <div className="slideShowContainer">
+            <div className="test" id="color1">
+              <Swiper
+                // install Swiper modules
+                modules={[
+                  Navigation,
+                  Pagination,
+                  Scrollbar,
+                  A11y,
+                  Autoplay,
+                  EffectCube,
+                ]}
+                spaceBetween={50}
+                cssMode={true}
+                speed={4000}
+                slidesPerView={1}
+                navigation
+                pagination={{ clickable: true }}
+                scrollbar={{ draggable: true }}
+                autoplay={{ delay: 3000, disableOnInteraction: false }}
+                //
 
-          <div className="projectSkills">
-            <b>Technologies: </b>
-            React, JavaScript, HTML, CSS
-          </div>
-        </div>
-        <div className="projectPage">
-          <div className="slide-container">
-            <Slide>
-              {slideImages.map((slideImage, index) => (
-                <div className="each-slide" key={index}>
-                  <div
-                    className=".react-slideshow-container"
-                    style={{
-                      backgroundImage: `url(${slideImage.url})`,
-                      backgroundRepeat: "no-repeat",
-                      backgroundSize: "contain",
-                    }}
-                  >
-                    {/* <span>{slideImage.caption}</span> */}
+                onSwiper={(swiper) => console.log(swiper)}
+                onSlideChange={() => console.log("slide change")}
+              >
+                <SwiperSlide className="swiperImg">
+                  <img className="image" src={image} />
+                </SwiperSlide>
+                <SwiperSlide className="swiperImg">
+                  <img className="image" src={image1} />
+                </SwiperSlide>
+                <SwiperSlide className="swiperImg">
+                  <img className="image" src={image2} />
+                </SwiperSlide>
+                <SwiperSlide className="swiperImg">
+                  <img className="image" src={image3} />
+                </SwiperSlide>
+                <SwiperSlide className="swiperImg">
+                  <img className="image" src={image4} />
+                </SwiperSlide>
+                <SwiperSlide className="swiperImg">
+                  <img className="image" src={image5} />
+                </SwiperSlide>
+                <SwiperSlide className="swiperImg">
+                  <img className="image" src={image6} />
+                </SwiperSlide>
+                <SwiperSlide className="swiperImg">
+                  <img className="image" src={image7} />
+                </SwiperSlide>
+              </Swiper>
+            </div>
+            <div className="projectInformation">
+              <div className="text">
+                <div className="information">
+                  <div>Tsundoku</div>
+                  <div className="description">
+                    A website that starts with four main types: Movies / Series
+                    / Anime / Books. The user can choose a category and see a
+                    list of each category. The user can filter by different
+                    categories and can specifically search by name. The user can
+                    view information about media and can add to their own list.
+                    The user will also be able to write a review and rate the
+                    show/book if they want.
                   </div>
                 </div>
-              ))}
-            </Slide>
+                <div>
+                  <a href="https://github.com/Jacob-Folley/CapStone-Client">
+                    <div className="Github">Github</div>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
-      <section className="project">
-        <div className="projectInfo">
-          <h1 className="projectName">Notes</h1>
-          <h3 className="projectSourceCode">
-            <b>Source Code: </b>
-            <a href="https://github.com/Jacob-Folley/NoteTaking">GitHub</a>
-          </h3>
 
-          <div className="projectSkills">
-            <b>Technologies: </b>
-            React, JavaScript, HTML, CSS, Python, Django
+        <div className="projectContainer" id="project2">
+          <div className="imageContainer">
+            <div className="test" id="color2">
+              <img className="image" src={require("../../img/noteApp.png")} />
+            </div>
+            <div className="projectInformation">
+              <div className="text">
+                <div className="information">
+                  <div>Notes App</div>
+                  <div className="description">
+                    A simple note taking application that allows a user to
+                    create quick notes that can be stored as well as a to do
+                    list.
+                  </div>
+                </div>
+                <div>
+                  <a href="https://github.com/Jacob-Folley/CapStone-Client">
+                    <div className="Github">Github</div>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div className="projectPage">
-          <div className="slide-container">
-            <div>
-              <img
-                className="projectImg"
-                src={require("../../img/noteApp.png")}
-              ></img>
+
+        <div className="projectContainer" id="project3">
+          <div className="slideShowContainer">
+            <div className="test" id="color3">
+              <Swiper
+                // install Swiper modules
+                modules={[
+                  Navigation,
+                  Pagination,
+                  Scrollbar,
+                  A11y,
+                  Autoplay,
+                  EffectCube,
+                ]}
+                spaceBetween={50}
+                cssMode={true}
+                speed={4000}
+                slidesPerView={1}
+                navigation
+                pagination={{ clickable: true }}
+                scrollbar={{ draggable: true }}
+                autoplay={{ delay: 3000, disableOnInteraction: false }}
+                //
+
+                onSwiper={(swiper) => console.log(swiper)}
+                onSlideChange={() => console.log("slide change")}
+              >
+                <SwiperSlide className="swiperImg">
+                  <img className="image" src={pic} />
+                </SwiperSlide>
+
+                <SwiperSlide className="swiperImg">
+                  <img className="image" src={pic1} />
+                </SwiperSlide>
+                <SwiperSlide className="swiperImg">
+                  <img className="image" src={pic2} />
+                </SwiperSlide>
+                <SwiperSlide className="swiperImg">
+                  <img className="image" src={pic3} />
+                </SwiperSlide>
+                <SwiperSlide className="swiperImg">
+                  <img className="image" src={pic4} />
+                </SwiperSlide>
+              </Swiper>
+            </div>
+            <div className="projectInformation">
+              <div className="text">
+                <div className="information">
+                  <div>Career Connect</div>
+                  <div className="description">
+                    A website that starts by choosing: Applicant / Employer. The
+                    applicant can upload their resume, search for jobs, and keep
+                    track of their job applications. An employer can post jobs,
+                    search through applicants, and keep track of all their job
+                    postings.
+                  </div>
+                </div>
+                <div>
+                  <a href="https://github.com/Jacob-Folley/CapStone-Client">
+                    <div className="Github">Github</div>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="project">
-        <div className="projectInfo">
-          <h1 className="projectName">Career Connect</h1>
-          <h3 className="projectSourceCode">
-            <b>Source Code: </b>
-            <a href="https://github.com/Jacob-Folley/FrontEnd-Capstone">
-              GitHub
-            </a>
-          </h3>
-
-          <div className="projectSkills">
-            <b>Technologies: </b>
-            React, JavaScript, HTML, CSS, Python, Django
-          </div>
-        </div>
-        <div className="projectPage">
-          <div className="slide-container">
-            <Slide>
-              {slideImages2.map((slideImage, index) => (
-                <div className="each-slide" key={index}>
-                  <div
-                    className=".react-slideshow-container"
-                    style={{
-                      backgroundImage: `url(${slideImage.url})`,
-                      backgroundRepeat: "no-repeat",
-                      backgroundSize: "contain",
-                    }}
-                  >
-                    {/* <span>{slideImage.caption}</span> */}
-                  </div>
-                </div>
-              ))}
-            </Slide>
-          </div>
-        </div>
-      </section>
-
+      <hr></hr>
       <div className="links">
         <div className="social">
           <a
@@ -237,3 +266,99 @@ export const HomeModule = () => {
     </>
   );
 };
+
+{
+  /* <section className="project">
+<div className="projectInfo">
+  <h1 className="projectName">Tsundoku</h1>
+  <h3 className="projectSourceCode">
+    <b>Source Code: </b>
+    <a href="https://github.com/Jacob-Folley/CapStone-Client">GitHub</a>
+  </h3>
+
+  <div className="projectSkills">
+    <b>Technologies: </b>
+    React, JavaScript, HTML, CSS
+  </div>
+</div>
+<div className="projectPage">
+  <div className="slide-container">
+    <Slide>
+      {slideImages.map((slideImage, index) => (
+        <div className="each-slide" key={index}>
+          <div
+            className=".react-slideshow-container"
+            style={{
+              backgroundImage: `url(${slideImage.url})`,
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
+              width: "100%",
+            }}
+          ></div>
+        </div>
+      ))}
+    </Slide>
+  </div>
+</div>
+</section>
+<section className="project">
+<div className="projectInfo">
+  <h1 className="projectName">Notes</h1>
+  <h3 className="projectSourceCode">
+    <b>Source Code: </b>
+    <a href="https://github.com/Jacob-Folley/NoteTaking">GitHub</a>
+  </h3>
+
+  <div className="projectSkills">
+    <b>Technologies: </b>
+    React, JavaScript, HTML, CSS, Python, Django
+  </div>
+</div>
+<div className="projectPage">
+  <div className="slide-container">
+    <div>
+      <img
+        className="projectImg"
+        src={require("../../img/noteApp.png")}
+      ></img>
+    </div>
+  </div>
+</div>
+</section>
+
+<section className="project">
+<div className="projectInfo">
+  <h1 className="projectName">Career Connect</h1>
+  <h3 className="projectSourceCode">
+    <b>Source Code: </b>
+    <a href="https://github.com/Jacob-Folley/FrontEnd-Capstone">
+      GitHub
+    </a>
+  </h3>
+
+  <div className="projectSkills">
+    <b>Technologies: </b>
+    React, JavaScript, HTML, CSS, Python, Django
+  </div>
+</div>
+<div className="projectPage">
+  <div className="slide-container">
+    <Slide>
+      {slideImages2.map((slideImage, index) => (
+        <div className="each-slide" key={index}>
+          <div
+            className=".react-slideshow-container"
+            style={{
+              backgroundImage: `url(${slideImage.url})`,
+              backgroundRepeat: "no-repeat",
+            }}
+          >
+            {/* <span>{slideImage.caption}</span> */
+}
+//           </div>
+//         </div>
+//       ))}
+//     </Slide>
+//   </div>
+// </div>
+// </section> */}

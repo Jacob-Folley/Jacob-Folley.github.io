@@ -15,7 +15,10 @@ export const ProjectModule = () => {
 
       <div className="aboutMeContainer">
         <div className="aboutImage">
-          <img src={require("../../img/IMG_1776.jpeg")} />
+          <img
+            className="personalImg"
+            src={require("../../img/IMG_1776.jpeg")}
+          />
         </div>
         <div className="aboutBio">
           <h1>My Background</h1>
@@ -111,6 +114,8 @@ export const ProjectModule = () => {
           </div>
         </div>
       </div>
+
+      <hr></hr>
 
       <div className="links">
         <div className="social">
