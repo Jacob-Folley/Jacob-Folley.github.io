@@ -29,7 +29,7 @@
   animation-duration: 2s;
 }
 
-img {
+.personalImg {
   width: 130%;
   /* border: 0.5px solid black; */
   border-radius: 3%;
@@ -62,6 +62,7 @@ img {
   justify-content: center;
   align-items: start;
   margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .personalTitle {
@@ -88,6 +89,7 @@ img {
   width: 60%;
   margin-left: 5%;
   margin-right: -9%;
+  font-family: "Open Sans", sans-serif;
 }
 
 .personalBlock p {
@@ -96,4 +98,91 @@ img {
 }
 .right {
   margin-left: 15%;
+}
+
+@media only screen and (max-width: 2500px) {
+}
+
+@media only screen and (max-width: 2000px) {
+}
+
+@media only screen and (max-width: 1450px) {
+}
+
+@media only screen and (max-width: 1000px) {
+  .quoteContainer {
+    padding-top: 20%;
+  }
+  .quote {
+    width: 90%;
+    font-size: 1rem;
+  }
+
+  .aboutMeContainer {
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .aboutImage {
+    width: 80%;
+  }
+
+  .personalImg {
+    width: 100%;
+  }
+
+  .aboutBio {
+    width: 80%;
+    font-size: 1rem;
+
+    margin: 0;
+  }
+
+  .aboutBio h1 {
+    font-size: 1.5rem;
+  }
+
+  .personalContainer {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .personalTitle {
+    width: 80%;
+    text-align: start;
+    margin: 0;
+    margin-bottom: 5%;
+    font-size: 1.5rem;
+  }
+
+  .personalInfo {
+    width: 100%;
+  }
+
+  .personalSection {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .personalBlock {
+    width: 80%;
+    margin: 0;
+    font-size: 0.8rem;
+  }
+
+  .personalBlock h1 {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+}
+
+@media only screen and (max-width: 500px) {
+}
+
+@media only screen and (max-width: 400px) {
 }
