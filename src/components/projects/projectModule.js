@@ -43,16 +43,16 @@ export const ProjectModule = () => {
           enjoyed coding and the amazing features of software, however I never
           thought of it as a possbile career until I started working at Cruise
           Automation.
-          <br /> <br /> At Cruise Automation I first hand got to experience the
-          world of software development. I tested autonomous vehicles throughout
-          San Francisco getting to experience the amazing achievements that
-          software engineering could do. Working around software engineers
-          allowed me to realize my dream of a career in software development.
-          When COVID happened, I had to move out of San Francisco because
-          everything was shut down. After deciding to move to Nashville, I
-          searched for my way into the software field and found Nashville
-          Software School. Graduating from Nashville Software School I am ready
-          to experience the world of Software Development.
+          <br /> <br /> At Cruise Automation I got to experience the world of
+          software development first hand. I tested autonomous vehicles
+          throughout San Francisco getting to experience the amazing
+          achievements that software engineering could do. Working around
+          software engineers allowed me to realize my dream of a career in
+          software development. When COVID happened, I had to move out of San
+          Francisco because everything was shut down. After deciding to move to
+          Nashville, I searched for my way into the software field and found
+          Nashville Software School. Graduating from Nashville Software School I
+          am ready to experience the world of Software Development.
           <br /> <br />
           Send me an email if you would like to connect,{" "}
           <a href="https://mail.google.com/mail/u/0/?fs=1&to=jakebfolley@gmail.com&su=SUBJECT&body=BODY&tf=cm">
